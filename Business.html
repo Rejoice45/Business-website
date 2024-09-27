@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Innovative Collectors</title>
+</head> 
+<body>
+    <div class="head">
+        <marquee scrollamount="10" onmouseover="this.stop()" onmouseout="this.start()" direction="right">INNOVATIVE COLLECTORS</marquee>
+    </div>
+    <header>
+        <nav class="link">
+            <li class="hover-box">
+                <li class="active"><a href="#home"><i class="fa fa-home"></i>HOME</a></li>
+                <li><a href="#aboutus"><i class="fa fa-info"></i>ABOUT US</a></li>
+                <li><a href="#services"><i class="fa fa-person"></i>SERVICES</a></li>
+                <li><a href="#contact"><i class="fa fa-phone-volume"></i>CONTACTS</a></li>
+                <li><a href=""><i class="fa fa-search"></i></a></li>
+            </li>
+            <div>
+                <button class="button">Place an order</button>
+            </div>
+        </nav>
+        <section id="home">
+            <ul style="font-size: 50px; font-weight: bold; font-family: 'Times New Roman', Times, serif; color: silver;">Royale Brand</ul>
+            <h1>Welcome To Our Website</h1>
+            <p>This is the perfect brand for your perfumes in order to smell like a million bucks and <br> Jewelries we also work on pre-orders too.</p>
+        </section>
+        <section id="aboutus">
+            <h2>About Us</h2>
+            <p class="f">Featured </p>
+            <p class="l">The Perfection <br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+            Consequuntur ut accusamus tenetur in porro dolor </p>
+        </section>
+        <section id="services">
+            <h2>Patronise Us Now</h2>
+            <p class="w">We Are Always Ready To</p>
+            <p>Take A Perfect Shot</p>
+            <button class="button5">Get Started</button>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="submit-form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+<p>                                                                                                                                                                                           
+                Our Store <br> Get in Touch <br>
+                Home    <i class="fa fa-location-dot"> 23 ikenne Babcock-University</i> <br>
+                About   <i class="fa fa-phone"> 23 ikenne Babcock-University</i> <br>
+                Service <i class="fa fa-wrench"> 23 ikenne Babcock-University</i> <br>
+                Contact <i class="fa fa-envelope"> 23 ikenne Babcock-University</i>
+
+            </p>
+        </section>
+           
+        <footer>
+            <p>&copy; 2024 Royale Brand. All rights reserved</p>
+        </footer>
+    </header>
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor =>{
+                anchor.addEventListener('click',function(e){e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'
+                });
+            });
+        });
+        </script>
+
+</body>
+</html>
